@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="REGRESSION Test Parallel"  parallel="tests"  thread-count="2"  verbose="1" >
+
+	<parameter name="environment" value="qa" />
+	
+	<listeners>
+		<listener class-name="phptravels.listener.TestListener"/>
+	</listeners>
+	
+	<test name="Regression-Chrome">
+
+		<parameter name="browser" value="chrome" />
+
+		<packages>
+			<package name="phptravels.testProcess"/>
+            <package name="phptravels.testProcess.tests"/>
+        </packages>
+
+	</test>
+	
+	<test name="Regression-Firefox">
+
+		<parameter name="browser" value="firefox" />
+
+		<packages>
+			<package name="phptravels.testProcess"/>
+            <package name="phptravels.testProcess.tests"/>
+        </packages>
+
+	</test>
+</suite>

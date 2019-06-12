@@ -1,0 +1,189 @@
+<html>
+<head>
+<title>TestNG:  Mozzila</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Mozzila</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>22/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Jun 12 17:29:55 CEST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>284 seconds (284373 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='phptravels.testProces.tests.TS001_OpenAndVerifyHomePage.TC01_OpenAndVerifyHomePage()'><b>TC01_OpenAndVerifyHomePage</b><br>Test class: phptravels.testProces.tests.TS001_OpenAndVerifyHomePage</td>
+<td></td>
+<td>18</td>
+<td>phptravels.testProces.tests.TS001_OpenAndVerifyHomePage@31ef45e3</td></tr>
+<tr>
+<td title='phptravels.testProces.tests.TS003_OpenAndVerifyRegisterPage_UsingLink.TC01_OpenAndVerifyLoginPage_UsingLink()'><b>TC01_OpenAndVerifyLoginPage_UsingLink</b><br>Test class: phptravels.testProces.tests.TS003_OpenAndVerifyRegisterPage_UsingLink</td>
+<td></td>
+<td>19</td>
+<td>phptravels.testProces.tests.TS003_OpenAndVerifyRegisterPage_UsingLink@3c0ecd4b</td></tr>
+<tr>
+<td title='phptravels.testProces.tests.TS002_HomePage_VerifyFuncionalityOfMyAccountDropdownMenu.TC01_goToLoginPageWithLoginBtnOnDropdownMenu()'><b>TC01_goToLoginPageWithLoginBtnOnDropdownMenu</b><br>Test class: phptravels.testProces.tests.TS002_HomePage_VerifyFuncionalityOfMyAccountDropdownMenu</td>
+<td></td>
+<td>2</td>
+<td>phptravels.testProces.tests.TS002_HomePage_VerifyFuncionalityOfMyAccountDropdownMenu@598067a5</td></tr>
+<tr>
+<td title='phptravels.testProces.tests.TS010_InvalidLoginAttempts_VerifyErrorMsg.TC01_loginWithAllEmptyFields()'><b>TC01_loginWithAllEmptyFields</b><br>Test class: phptravels.testProces.tests.TS010_InvalidLoginAttempts_VerifyErrorMsg</td>
+<td></td>
+<td>0</td>
+<td>phptravels.testProces.tests.TS010_InvalidLoginAttempts_VerifyErrorMsg@42dafa95</td></tr>
+<tr>
+<td title='phptravels.testProces.tests.TS004_RegisterNewValidUser.TC01_registerNewValidUser_VerifyAccountPage()'><b>TC01_registerNewValidUser_VerifyAccountPage</b><br>Test class: phptravels.testProces.tests.TS004_RegisterNewValidUser</td>
+<td></td>
+<td>22</td>
+<td>phptravels.testProces.tests.TS004_RegisterNewValidUser@14bf9759</td></tr>
+<tr>
+<td title='phptravels.testProces.tests.TS005_RegisterNewUserWithExistingEmail_VerifyErrorMsg.TC01_registerUserWithExistingEmail_showErrorMsg()'><b>TC01_registerUserWithExistingEmail_showErrorMsg</b><br>Test class: phptravels.testProces.tests.TS005_RegisterNewUserWithExistingEmail_VerifyErrorMsg</td>
+<td></td>
+<td>11</td>
+<td>phptravels.testProces.tests.TS005_RegisterNewUserWithExistingEmail_VerifyErrorMsg@5f341870</td></tr>
+<tr>
+<td title='phptravels.testProces.tests.TS006_IncompleteRegistartion_VerifyErrorMsgs.TC01_registerWithEmptyFirstnameField_showErrorMsg()'><b>TC01_registerWithEmptyFirstnameField_showErrorMsg</b><br>Test class: phptravels.testProces.tests.TS006_IncompleteRegistartion_VerifyErrorMsgs</td>
+<td></td>
+<td>2</td>
+<td>phptravels.testProces.tests.TS006_IncompleteRegistartion_VerifyErrorMsgs@553f17c</td></tr>
+<tr>
+<td title='phptravels.testProces.tests.TS009_LoginValidUserWithInvalidPassword_VerifyErrorMsg.TC01_testLoginWithBadPassword_showErrorMsg()'><b>TC01_testLoginWithBadPassword_showErrorMsg</b><br>Test class: phptravels.testProces.tests.TS009_LoginValidUserWithInvalidPassword_VerifyErrorMsg</td>
+<td></td>
+<td>12</td>
+<td>phptravels.testProces.tests.TS009_LoginValidUserWithInvalidPassword_VerifyErrorMsg@589838eb</td></tr>
+<tr>
+<td title='phptravels.testProces.tests.TS008_LoginValidUser_VerifyAccountPage_AndLogout.TC01_testLoginWithValidCredentials()'><b>TC01_testLoginWithValidCredentials</b><br>Test class: phptravels.testProces.tests.TS008_LoginValidUser_VerifyAccountPage_AndLogout</td>
+<td></td>
+<td>14</td>
+<td>phptravels.testProces.tests.TS008_LoginValidUser_VerifyAccountPage_AndLogout@271053e1</td></tr>
+<tr>
+<td title='phptravels.testProces.tests.TS007_OpenAndVerifyLoginPage_UsingLink.TC01_verifyLoginPage()'><b>TC01_verifyLoginPage</b><br>Test class: phptravels.testProces.tests.TS007_OpenAndVerifyLoginPage_UsingLink</td>
+<td></td>
+<td>9</td>
+<td>phptravels.testProces.tests.TS007_OpenAndVerifyLoginPage_UsingLink@4f7d0008</td></tr>
+<tr>
+<td title='phptravels.testProces.tests.TS002_HomePage_VerifyFuncionalityOfMyAccountDropdownMenu.TC02_goToRegisterPageWithSignUpBtnOnDropdownMenu()'><b>TC02_goToRegisterPageWithSignUpBtnOnDropdownMenu</b><br>Test class: phptravels.testProces.tests.TS002_HomePage_VerifyFuncionalityOfMyAccountDropdownMenu</td>
+<td></td>
+<td>2</td>
+<td>phptravels.testProces.tests.TS002_HomePage_VerifyFuncionalityOfMyAccountDropdownMenu@598067a5</td></tr>
+<tr>
+<td title='phptravels.testProces.tests.TS004_RegisterNewValidUser.TC02_logoutFromAccountPage_AndVerifyLoginPage()'><b>TC02_logoutFromAccountPage_AndVerifyLoginPage</b><br>Test class: phptravels.testProces.tests.TS004_RegisterNewValidUser</td>
+<td></td>
+<td>3</td>
+<td>phptravels.testProces.tests.TS004_RegisterNewValidUser@14bf9759</td></tr>
+<tr>
+<td title='phptravels.testProces.tests.TS008_LoginValidUser_VerifyAccountPage_AndLogout.TC02_logoutToLoginPage()'><b>TC02_logoutToLoginPage</b><br>Test class: phptravels.testProces.tests.TS008_LoginValidUser_VerifyAccountPage_AndLogout</td>
+<td></td>
+<td>2</td>
+<td>phptravels.testProces.tests.TS008_LoginValidUser_VerifyAccountPage_AndLogout@271053e1</td></tr>
+<tr>
+<td title='phptravels.testProces.tests.TS006_IncompleteRegistartion_VerifyErrorMsgs.TC02_registerWithEmptyLastnameField_showErrorMsg()'><b>TC02_registerWithEmptyLastnameField_showErrorMsg</b><br>Test class: phptravels.testProces.tests.TS006_IncompleteRegistartion_VerifyErrorMsgs</td>
+<td></td>
+<td>2</td>
+<td>phptravels.testProces.tests.TS006_IncompleteRegistartion_VerifyErrorMsgs@553f17c</td></tr>
+<tr>
+<td title='phptravels.testProces.tests.TS006_IncompleteRegistartion_VerifyErrorMsgs.TC03_registerWithEmptyEmailField_showErrorMsg()'><b>TC03_registerWithEmptyEmailField_showErrorMsg</b><br>Test class: phptravels.testProces.tests.TS006_IncompleteRegistartion_VerifyErrorMsgs</td>
+<td></td>
+<td>2</td>
+<td>phptravels.testProces.tests.TS006_IncompleteRegistartion_VerifyErrorMsgs@553f17c</td></tr>
+<tr>
+<td title='phptravels.testProces.tests.TS006_IncompleteRegistartion_VerifyErrorMsgs.TC04_registerWithEmptyPasswordField_showErrorMsg()'><b>TC04_registerWithEmptyPasswordField_showErrorMsg</b><br>Test class: phptravels.testProces.tests.TS006_IncompleteRegistartion_VerifyErrorMsgs</td>
+<td></td>
+<td>2</td>
+<td>phptravels.testProces.tests.TS006_IncompleteRegistartion_VerifyErrorMsgs@553f17c</td></tr>
+<tr>
+<td title='phptravels.testProces.tests.TS006_IncompleteRegistartion_VerifyErrorMsgs.TC05_registerWithEmptyConfirmPasswordField_showErrorMsg()'><b>TC05_registerWithEmptyConfirmPasswordField_showErrorMsg</b><br>Test class: phptravels.testProces.tests.TS006_IncompleteRegistartion_VerifyErrorMsgs</td>
+<td></td>
+<td>2</td>
+<td>phptravels.testProces.tests.TS006_IncompleteRegistartion_VerifyErrorMsgs@553f17c</td></tr>
+<tr>
+<td title='phptravels.testProces.tests.TS006_IncompleteRegistartion_VerifyErrorMsgs.TC06_registerWithAllEmptyField_showErrorMsg()'><b>TC06_registerWithAllEmptyField_showErrorMsg</b><br>Test class: phptravels.testProces.tests.TS006_IncompleteRegistartion_VerifyErrorMsgs</td>
+<td></td>
+<td>2</td>
+<td>phptravels.testProces.tests.TS006_IncompleteRegistartion_VerifyErrorMsgs@553f17c</td></tr>
+<tr>
+<td title='phptravels.testProces.tests.TS006_IncompleteRegistartion_VerifyErrorMsgs.TC07_registerWithWrongConfirmpaswordField_showErrorMsg()'><b>TC07_registerWithWrongConfirmpaswordField_showErrorMsg</b><br>Test class: phptravels.testProces.tests.TS006_IncompleteRegistartion_VerifyErrorMsgs</td>
+<td></td>
+<td>2</td>
+<td>phptravels.testProces.tests.TS006_IncompleteRegistartion_VerifyErrorMsgs@553f17c</td></tr>
+<tr>
+<td title='phptravels.testProces.tests.TS006_IncompleteRegistartion_VerifyErrorMsgs.TC08_registerWithWrongFormOfEmail()'><b>TC08_registerWithWrongFormOfEmail</b><br>Test class: phptravels.testProces.tests.TS006_IncompleteRegistartion_VerifyErrorMsgs</td>
+<td></td>
+<td>2</td>
+<td>phptravels.testProces.tests.TS006_IncompleteRegistartion_VerifyErrorMsgs@553f17c</td></tr>
+<tr>
+<td title='phptravels.testProces.tests.TS006_IncompleteRegistartion_VerifyErrorMsgs.TC09_registerWithToLongEmail_localPartIsGreaterThan64Char()'><b>TC09_registerWithToLongEmail_localPartIsGreaterThan64Char</b><br>Test class: phptravels.testProces.tests.TS006_IncompleteRegistartion_VerifyErrorMsgs</td>
+<td></td>
+<td>2</td>
+<td>phptravels.testProces.tests.TS006_IncompleteRegistartion_VerifyErrorMsgs@553f17c</td></tr>
+<tr>
+<td title='phptravels.testProces.tests.TS006_IncompleteRegistartion_VerifyErrorMsgs.TC10_registerWithTooShortPassword_lessThanSixChar()'><b>TC10_registerWithTooShortPassword_lessThanSixChar</b><br>Test class: phptravels.testProces.tests.TS006_IncompleteRegistartion_VerifyErrorMsgs</td>
+<td></td>
+<td>2</td>
+<td>phptravels.testProces.tests.TS006_IncompleteRegistartion_VerifyErrorMsgs@553f17c</td></tr>
+</table><p>
+</body>
+</html>

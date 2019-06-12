@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="11" total="30" passed="19">
+  <reporter-output>
+  </reporter-output>
+  <suite name="BVT Test Parallel" duration-ms="152337" started-at="2019-06-12T17:56:39Z" finished-at="2019-06-12T17:59:11Z">
+    <groups>
+    </groups>
+    <test name="BVT-Firefox" duration-ms="140277" started-at="2019-06-12T17:56:39Z" finished-at="2019-06-12T17:58:59Z">
+      <class name="phptravels.testProcess.tests.TS008_LoginValidUser_VerifyAccountPage_AndLogout">
+        <test-method status="PASS" signature="setupDriver(java.lang.String)[pri:0, instance:phptravels.testProcess.tests.TS008_LoginValidUser_VerifyAccountPage_AndLogout@72d818d1]" name="setupDriver" is-config="true" duration-ms="7567" started-at="2019-06-12T17:58:09Z" finished-at="2019-06-12T17:58:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method status="PASS" signature="TC01_testLoginWithValidCredentials()[pri:0, instance:phptravels.testProcess.tests.TS008_LoginValidUser_VerifyAccountPage_AndLogout@72d818d1]" name="TC01_testLoginWithValidCredentials" duration-ms="11622" started-at="2019-06-12T17:58:16Z" finished-at="2019-06-12T17:58:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01_testLoginWithValidCredentials -->
+        <test-method status="PASS" signature="TC02_logoutToLoginPage()[pri:0, instance:phptravels.testProcess.tests.TS008_LoginValidUser_VerifyAccountPage_AndLogout@72d818d1]" name="TC02_logoutToLoginPage" duration-ms="2746" started-at="2019-06-12T17:58:51Z" depends-on-methods="phptravels.testProcess.tests.TS008_LoginValidUser_VerifyAccountPage_AndLogout.TC01_testLoginWithValidCredentials" finished-at="2019-06-12T17:58:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC02_logoutToLoginPage -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:phptravels.testProcess.tests.TS008_LoginValidUser_VerifyAccountPage_AndLogout@72d818d1]" name="quitDriver" is-config="true" duration-ms="5926" started-at="2019-06-12T17:58:53Z" finished-at="2019-06-12T17:58:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- phptravels.testProcess.tests.TS008_LoginValidUser_VerifyAccountPage_AndLogout -->
+      <class name="phptravels.testProcess.tests.TS004_RegisterNewValidUser">
+        <test-method status="PASS" signature="setupDriver(java.lang.String)[pri:0, instance:phptravels.testProcess.tests.TS004_RegisterNewValidUser@56ac3a89]" name="setupDriver" is-config="true" duration-ms="7250" started-at="2019-06-12T17:57:11Z" finished-at="2019-06-12T17:57:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method status="PASS" signature="TC01_registerNewValidUser_VerifyAccountPage()[pri:0, instance:phptravels.testProcess.tests.TS004_RegisterNewValidUser@56ac3a89]" name="TC01_registerNewValidUser_VerifyAccountPage" duration-ms="20720" started-at="2019-06-12T17:57:19Z" finished-at="2019-06-12T17:57:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01_registerNewValidUser_VerifyAccountPage -->
+        <test-method status="PASS" signature="TC02_logoutFromAccountPage_AndVerifyLoginPage()[pri:0, instance:phptravels.testProcess.tests.TS004_RegisterNewValidUser@56ac3a89]" name="TC02_logoutFromAccountPage_AndVerifyLoginPage" duration-ms="3148" started-at="2019-06-12T17:57:39Z" finished-at="2019-06-12T17:57:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC02_logoutFromAccountPage_AndVerifyLoginPage -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:phptravels.testProcess.tests.TS004_RegisterNewValidUser@56ac3a89]" name="quitDriver" is-config="true" duration-ms="2403" started-at="2019-06-12T17:57:42Z" finished-at="2019-06-12T17:57:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- phptravels.testProcess.tests.TS004_RegisterNewValidUser -->
+      <class name="phptravels.testProcess.tests.TS005_RegisterNewUserWithExistingEmail_VerifyErrorMsg">
+        <test-method status="PASS" signature="setupDriver(java.lang.String)[pri:0, instance:phptravels.testProcess.tests.TS005_RegisterNewUserWithExistingEmail_VerifyErrorMsg@27c20538]" name="setupDriver" is-config="true" duration-ms="6448" started-at="2019-06-12T17:57:45Z" finished-at="2019-06-12T17:57:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method status="PASS" signature="TC01_registerUserWithExistingEmail_showErrorMsg()[pri:0, instance:phptravels.testProcess.tests.TS005_RegisterNewUserWithExistingEmail_VerifyErrorMsg@27c20538]" name="TC01_registerUserWithExistingEmail_showErrorMsg" duration-ms="14434" started-at="2019-06-12T17:57:51Z" finished-at="2019-06-12T17:58:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01_registerUserWithExistingEmail_showErrorMsg -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:phptravels.testProcess.tests.TS005_RegisterNewUserWithExistingEmail_VerifyErrorMsg@27c20538]" name="quitDriver" is-config="true" duration-ms="2907" started-at="2019-06-12T17:58:06Z" finished-at="2019-06-12T17:58:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- phptravels.testProcess.tests.TS005_RegisterNewUserWithExistingEmail_VerifyErrorMsg -->
+      <class name="phptravels.testProcess.tests.TS009_LoginValidUserWithInvalidPassword_VerifyErrorMsg">
+        <test-method status="PASS" signature="setupDriver(java.lang.String)[pri:0, instance:phptravels.testProcess.tests.TS009_LoginValidUserWithInvalidPassword_VerifyErrorMsg@6e06451e]" name="setupDriver" is-config="true" duration-ms="8792" started-at="2019-06-12T17:58:28Z" finished-at="2019-06-12T17:58:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method status="PASS" signature="TC01_testLoginWithBadPassword_showErrorMsg()[pri:0, instance:phptravels.testProcess.tests.TS009_LoginValidUserWithInvalidPassword_VerifyErrorMsg@6e06451e]" name="TC01_testLoginWithBadPassword_showErrorMsg" duration-ms="11545" started-at="2019-06-12T17:58:37Z" finished-at="2019-06-12T17:58:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01_testLoginWithBadPassword_showErrorMsg -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:phptravels.testProcess.tests.TS009_LoginValidUserWithInvalidPassword_VerifyErrorMsg@6e06451e]" name="quitDriver" is-config="true" duration-ms="2566" started-at="2019-06-12T17:58:48Z" finished-at="2019-06-12T17:58:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- phptravels.testProcess.tests.TS009_LoginValidUserWithInvalidPassword_VerifyErrorMsg -->
+      <class name="phptravels.testProcess.tests.TS002_HomePage_VerifyFuncionalityOfMyAccountDropdownMenu">
+        <test-method status="PASS" signature="setupData(java.lang.String)[pri:0, instance:phptravels.testProcess.tests.TS002_HomePage_VerifyFuncionalityOfMyAccountDropdownMenu@490ab905]" name="setupData" is-config="true" duration-ms="16" started-at="2019-06-12T17:56:39Z" finished-at="2019-06-12T17:56:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupData -->
+        <test-method status="PASS" signature="setupDriver(java.lang.String)[pri:0, instance:phptravels.testProcess.tests.TS002_HomePage_VerifyFuncionalityOfMyAccountDropdownMenu@490ab905]" name="setupDriver" is-config="true" duration-ms="8572" started-at="2019-06-12T17:56:39Z" finished-at="2019-06-12T17:56:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:phptravels.testProcess.tests.TS002_HomePage_VerifyFuncionalityOfMyAccountDropdownMenu@490ab905]" name="beforeMethod" is-config="true" duration-ms="13655" started-at="2019-06-12T17:56:48Z" finished-at="2019-06-12T17:57:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TC01_goToLoginPageWithLoginBtnOnDropdownMenu()[pri:0, instance:phptravels.testProcess.tests.TS002_HomePage_VerifyFuncionalityOfMyAccountDropdownMenu@490ab905]" name="TC01_goToLoginPageWithLoginBtnOnDropdownMenu" duration-ms="2559" started-at="2019-06-12T17:57:01Z" finished-at="2019-06-12T17:57:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01_goToLoginPageWithLoginBtnOnDropdownMenu -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:phptravels.testProcess.tests.TS002_HomePage_VerifyFuncionalityOfMyAccountDropdownMenu@490ab905]" name="beforeMethod" is-config="true" duration-ms="2164" started-at="2019-06-12T17:57:04Z" finished-at="2019-06-12T17:57:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TC02_goToRegisterPageWithSignUpBtnOnDropdownMenu()[pri:0, instance:phptravels.testProcess.tests.TS002_HomePage_VerifyFuncionalityOfMyAccountDropdownMenu@490ab905]" name="TC02_goToRegisterPageWithSignUpBtnOnDropdownMenu" duration-ms="2720" started-at="2019-06-12T17:57:06Z" finished-at="2019-06-12T17:57:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC02_goToRegisterPageWithSignUpBtnOnDropdownMenu -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:phptravels.testProcess.tests.TS002_HomePage_VerifyFuncionalityOfMyAccountDropdownMenu@490ab905]" name="quitDriver" is-config="true" duration-ms="2483" started-at="2019-06-12T17:57:09Z" finished-at="2019-06-12T17:57:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- phptravels.testProcess.tests.TS002_HomePage_VerifyFuncionalityOfMyAccountDropdownMenu -->
+    </test> <!-- BVT-Firefox -->
+    <test name="BVT-Chrome" duration-ms="152337" started-at="2019-06-12T17:56:39Z" finished-at="2019-06-12T17:59:11Z">
+      <class name="phptravels.testProcess.tests.TS008_LoginValidUser_VerifyAccountPage_AndLogout">
+        <test-method status="PASS" signature="setupDriver(java.lang.String)[pri:0, instance:phptravels.testProcess.tests.TS008_LoginValidUser_VerifyAccountPage_AndLogout@53b32d7]" name="setupDriver" is-config="true" duration-ms="3404" started-at="2019-06-12T17:58:36Z" finished-at="2019-06-12T17:58:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method status="PASS" signature="TC01_testLoginWithValidCredentials()[pri:0, instance:phptravels.testProcess.tests.TS008_LoginValidUser_VerifyAccountPage_AndLogout@53b32d7]" name="TC01_testLoginWithValidCredentials" duration-ms="13623" started-at="2019-06-12T17:58:39Z" finished-at="2019-06-12T17:58:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01_testLoginWithValidCredentials -->
+        <test-method status="PASS" signature="TC02_logoutToLoginPage()[pri:0, instance:phptravels.testProcess.tests.TS008_LoginValidUser_VerifyAccountPage_AndLogout@53b32d7]" name="TC02_logoutToLoginPage" duration-ms="3530" started-at="2019-06-12T17:59:07Z" depends-on-methods="phptravels.testProcess.tests.TS008_LoginValidUser_VerifyAccountPage_AndLogout.TC01_testLoginWithValidCredentials" finished-at="2019-06-12T17:59:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC02_logoutToLoginPage -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:phptravels.testProcess.tests.TS008_LoginValidUser_VerifyAccountPage_AndLogout@53b32d7]" name="quitDriver" is-config="true" duration-ms="714" started-at="2019-06-12T17:59:11Z" finished-at="2019-06-12T17:59:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- phptravels.testProcess.tests.TS008_LoginValidUser_VerifyAccountPage_AndLogout -->
+      <class name="phptravels.testProcess.tests.TS004_RegisterNewValidUser">
+        <test-method status="PASS" signature="setupDriver(java.lang.String)[pri:0, instance:phptravels.testProcess.tests.TS004_RegisterNewValidUser@42e26948]" name="setupDriver" is-config="true" duration-ms="2828" started-at="2019-06-12T17:57:36Z" finished-at="2019-06-12T17:57:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method status="PASS" signature="TC01_registerNewValidUser_VerifyAccountPage()[pri:0, instance:phptravels.testProcess.tests.TS004_RegisterNewValidUser@42e26948]" name="TC01_registerNewValidUser_VerifyAccountPage" duration-ms="20409" started-at="2019-06-12T17:57:39Z" finished-at="2019-06-12T17:57:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01_registerNewValidUser_VerifyAccountPage -->
+        <test-method status="PASS" signature="TC02_logoutFromAccountPage_AndVerifyLoginPage()[pri:0, instance:phptravels.testProcess.tests.TS004_RegisterNewValidUser@42e26948]" name="TC02_logoutFromAccountPage_AndVerifyLoginPage" duration-ms="2645" started-at="2019-06-12T17:57:59Z" finished-at="2019-06-12T17:58:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC02_logoutFromAccountPage_AndVerifyLoginPage -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:phptravels.testProcess.tests.TS004_RegisterNewValidUser@42e26948]" name="quitDriver" is-config="true" duration-ms="699" started-at="2019-06-12T17:58:02Z" finished-at="2019-06-12T17:58:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- phptravels.testProcess.tests.TS004_RegisterNewValidUser -->
+      <class name="phptravels.testProcess.tests.TS007_OpenAndVerifyLoginPage_UsingLink">
+        <test-method status="PASS" signature="setupDriver(java.lang.String)[pri:0, instance:phptravels.testProcess.tests.TS007_OpenAndVerifyLoginPage_UsingLink@343f4d3d]" name="setupDriver" is-config="true" duration-ms="2915" started-at="2019-06-12T17:58:23Z" finished-at="2019-06-12T17:58:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method status="PASS" signature="TC01_verifyLoginPage()[pri:0, instance:phptravels.testProcess.tests.TS007_OpenAndVerifyLoginPage_UsingLink@343f4d3d]" name="TC01_verifyLoginPage" duration-ms="9662" started-at="2019-06-12T17:58:25Z" finished-at="2019-06-12T17:58:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01_verifyLoginPage -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:phptravels.testProcess.tests.TS007_OpenAndVerifyLoginPage_UsingLink@343f4d3d]" name="quitDriver" is-config="true" duration-ms="803" started-at="2019-06-12T17:58:35Z" finished-at="2019-06-12T17:58:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- phptravels.testProcess.tests.TS007_OpenAndVerifyLoginPage_UsingLink -->
+      <class name="phptravels.testProcess.tests.TS001_OpenAndVerifyHomePage">
+        <test-method status="PASS" signature="setupData(java.lang.String)[pri:0, instance:phptravels.testProcess.tests.TS001_OpenAndVerifyHomePage@7d9d1a19]" name="setupData" is-config="true" duration-ms="16" started-at="2019-06-12T17:56:39Z" finished-at="2019-06-12T17:56:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupData -->
+        <test-method status="PASS" signature="setupDriver(java.lang.String)[pri:0, instance:phptravels.testProcess.tests.TS001_OpenAndVerifyHomePage@7d9d1a19]" name="setupDriver" is-config="true" duration-ms="3912" started-at="2019-06-12T17:56:39Z" finished-at="2019-06-12T17:56:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method status="PASS" signature="TC01_OpenAndVerifyHomePage()[pri:0, instance:phptravels.testProcess.tests.TS001_OpenAndVerifyHomePage@7d9d1a19]" name="TC01_OpenAndVerifyHomePage" duration-ms="12257" started-at="2019-06-12T17:56:43Z" finished-at="2019-06-12T17:56:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01_OpenAndVerifyHomePage -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:phptravels.testProcess.tests.TS001_OpenAndVerifyHomePage@7d9d1a19]" name="quitDriver" is-config="true" duration-ms="951" started-at="2019-06-12T17:56:55Z" finished-at="2019-06-12T17:56:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- phptravels.testProcess.tests.TS001_OpenAndVerifyHomePage -->
+      <class name="phptravels.testProcess.tests.TS003_OpenAndVerifyRegisterPage_UsingLink">
+        <test-method status="PASS" signature="setupDriver(java.lang.String)[pri:0, instance:phptravels.testProcess.tests.TS003_OpenAndVerifyRegisterPage_UsingLink@1794d431]" name="setupDriver" is-config="true" duration-ms="2833" started-at="2019-06-12T17:57:22Z" finished-at="2019-06-12T17:57:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method status="PASS" signature="TC01_OpenAndVerifyLoginPage_UsingLink()[pri:0, instance:phptravels.testProcess.tests.TS003_OpenAndVerifyRegisterPage_UsingLink@1794d431]" name="TC01_OpenAndVerifyLoginPage_UsingLink" duration-ms="10022" started-at="2019-06-12T17:57:25Z" finished-at="2019-06-12T17:57:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01_OpenAndVerifyLoginPage_UsingLink -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:phptravels.testProcess.tests.TS003_OpenAndVerifyRegisterPage_UsingLink@1794d431]" name="quitDriver" is-config="true" duration-ms="691" started-at="2019-06-12T17:57:35Z" finished-at="2019-06-12T17:57:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- phptravels.testProcess.tests.TS003_OpenAndVerifyRegisterPage_UsingLink -->
+      <class name="phptravels.testProcess.tests.TS005_RegisterNewUserWithExistingEmail_VerifyErrorMsg">
+        <test-method status="PASS" signature="setupDriver(java.lang.String)[pri:0, instance:phptravels.testProcess.tests.TS005_RegisterNewUserWithExistingEmail_VerifyErrorMsg@57baeedf]" name="setupDriver" is-config="true" duration-ms="3768" started-at="2019-06-12T17:58:03Z" finished-at="2019-06-12T17:58:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method status="PASS" signature="TC01_registerUserWithExistingEmail_showErrorMsg()[pri:0, instance:phptravels.testProcess.tests.TS005_RegisterNewUserWithExistingEmail_VerifyErrorMsg@57baeedf]" name="TC01_registerUserWithExistingEmail_showErrorMsg" duration-ms="15486" started-at="2019-06-12T17:58:06Z" finished-at="2019-06-12T17:58:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01_registerUserWithExistingEmail_showErrorMsg -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:phptravels.testProcess.tests.TS005_RegisterNewUserWithExistingEmail_VerifyErrorMsg@57baeedf]" name="quitDriver" is-config="true" duration-ms="756" started-at="2019-06-12T17:58:22Z" finished-at="2019-06-12T17:58:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- phptravels.testProcess.tests.TS005_RegisterNewUserWithExistingEmail_VerifyErrorMsg -->
+      <class name="phptravels.testProcess.tests.TS009_LoginValidUserWithInvalidPassword_VerifyErrorMsg">
+        <test-method status="PASS" signature="setupDriver(java.lang.String)[pri:0, instance:phptravels.testProcess.tests.TS009_LoginValidUserWithInvalidPassword_VerifyErrorMsg@5442a311]" name="setupDriver" is-config="true" duration-ms="3618" started-at="2019-06-12T17:58:53Z" finished-at="2019-06-12T17:58:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method status="PASS" signature="TC01_testLoginWithBadPassword_showErrorMsg()[pri:0, instance:phptravels.testProcess.tests.TS009_LoginValidUserWithInvalidPassword_VerifyErrorMsg@5442a311]" name="TC01_testLoginWithBadPassword_showErrorMsg" duration-ms="9955" started-at="2019-06-12T17:58:57Z" finished-at="2019-06-12T17:59:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01_testLoginWithBadPassword_showErrorMsg -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:phptravels.testProcess.tests.TS009_LoginValidUserWithInvalidPassword_VerifyErrorMsg@5442a311]" name="quitDriver" is-config="true" duration-ms="680" started-at="2019-06-12T17:59:07Z" finished-at="2019-06-12T17:59:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- phptravels.testProcess.tests.TS009_LoginValidUserWithInvalidPassword_VerifyErrorMsg -->
+      <class name="phptravels.testProcess.tests.TS002_HomePage_VerifyFuncionalityOfMyAccountDropdownMenu">
+        <test-method status="PASS" signature="setupDriver(java.lang.String)[pri:0, instance:phptravels.testProcess.tests.TS002_HomePage_VerifyFuncionalityOfMyAccountDropdownMenu@39c0f4a]" name="setupDriver" is-config="true" duration-ms="2998" started-at="2019-06-12T17:56:56Z" finished-at="2019-06-12T17:56:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:phptravels.testProcess.tests.TS002_HomePage_VerifyFuncionalityOfMyAccountDropdownMenu@39c0f4a]" name="beforeMethod" is-config="true" duration-ms="13749" started-at="2019-06-12T17:56:59Z" finished-at="2019-06-12T17:57:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TC01_goToLoginPageWithLoginBtnOnDropdownMenu()[pri:0, instance:phptravels.testProcess.tests.TS002_HomePage_VerifyFuncionalityOfMyAccountDropdownMenu@39c0f4a]" name="TC01_goToLoginPageWithLoginBtnOnDropdownMenu" duration-ms="2817" started-at="2019-06-12T17:57:13Z" finished-at="2019-06-12T17:57:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01_goToLoginPageWithLoginBtnOnDropdownMenu -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:phptravels.testProcess.tests.TS002_HomePage_VerifyFuncionalityOfMyAccountDropdownMenu@39c0f4a]" name="beforeMethod" is-config="true" duration-ms="2094" started-at="2019-06-12T17:57:16Z" finished-at="2019-06-12T17:57:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TC02_goToRegisterPageWithSignUpBtnOnDropdownMenu()[pri:0, instance:phptravels.testProcess.tests.TS002_HomePage_VerifyFuncionalityOfMyAccountDropdownMenu@39c0f4a]" name="TC02_goToRegisterPageWithSignUpBtnOnDropdownMenu" duration-ms="2801" started-at="2019-06-12T17:57:18Z" finished-at="2019-06-12T17:57:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC02_goToRegisterPageWithSignUpBtnOnDropdownMenu -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:phptravels.testProcess.tests.TS002_HomePage_VerifyFuncionalityOfMyAccountDropdownMenu@39c0f4a]" name="quitDriver" is-config="true" duration-ms="1636" started-at="2019-06-12T17:57:21Z" finished-at="2019-06-12T17:57:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- phptravels.testProcess.tests.TS002_HomePage_VerifyFuncionalityOfMyAccountDropdownMenu -->
+    </test> <!-- BVT-Chrome -->
+  </suite> <!-- BVT Test Parallel -->
+</testng-results>

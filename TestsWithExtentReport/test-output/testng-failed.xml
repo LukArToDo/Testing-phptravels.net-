@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" verbose="2" name="Failed suite [Probni Test]">
+  <parameter name="environment" value="qa"/>
+  <listeners>
+    <listener class-name="phptravels.listener.TestListener"/>
+  </listeners>
+  <test verbose="2" name="Mozzila(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="phptravels.testProces.tests.TS003_OpenAndVerifyRegisterPage_UsingLink">
+        <methods>
+          <include name="TC01_OpenAndVerifyLoginPage_UsingLink"/>
+          <include name="setupDriver"/>
+          <include name="setupData"/>
+          <include name="quitDriver"/>
+        </methods>
+      </class> <!-- phptravels.testProces.tests.TS003_OpenAndVerifyRegisterPage_UsingLink -->
+      <class name="phptravels.testProces.tests.TS009_LoginValidUserWithInvalidPassword_VerifyErrorMsg">
+        <methods>
+          <include name="TC01_testLoginWithBadPassword_showErrorMsg"/>
+          <include name="setupDriver"/>
+          <include name="setupData"/>
+          <include name="quitDriver"/>
+        </methods>
+      </class> <!-- phptravels.testProces.tests.TS009_LoginValidUserWithInvalidPassword_VerifyErrorMsg -->
+      <class name="phptravels.testProces.tests.TS005_RegisterNewUserWithExistingEmail_VerifyErrorMsg">
+        <methods>
+          <include name="setupDriver"/>
+          <include name="setupData"/>
+          <include name="TC01_registerUserWithExistingEmail_showErrorMsg"/>
+          <include name="quitDriver"/>
+        </methods>
+      </class> <!-- phptravels.testProces.tests.TS005_RegisterNewUserWithExistingEmail_VerifyErrorMsg -->
+      <class name="phptravels.testProces.tests.TS007_OpenAndVerifyLoginPage_UsingLink">
+        <methods>
+          <include name="setupDriver"/>
+          <include name="TC01_verifyLoginPage"/>
+          <include name="setupData"/>
+          <include name="quitDriver"/>
+        </methods>
+      </class> <!-- phptravels.testProces.tests.TS007_OpenAndVerifyLoginPage_UsingLink -->
+      <class name="phptravels.testProces.tests.TS004_RegisterNewValidUser">
+        <methods>
+          <include name="setupDriver"/>
+          <include name="TC02_logoutFromAccountPage_AndVerifyLoginPage"/>
+          <include name="setupData"/>
+          <include name="TC01_registerNewValidUser_VerifyAccountPage"/>
+          <include name="quitDriver"/>
+        </methods>
+      </class> <!-- phptravels.testProces.tests.TS004_RegisterNewValidUser -->
+      <class name="phptravels.testProces.tests.TS002_HomePage_VerifyFuncionalityOfMyAccountDropdownMenu">
+        <methods>
+          <include name="setupDriver"/>
+          <include name="setupData"/>
+          <include name="TC02_goToRegisterPageWithSignUpBtnOnDropdownMenu"/>
+          <include name="TC01_goToLoginPageWithLoginBtnOnDropdownMenu"/>
+          <include name="beforeMethod"/>
+          <include name="quitDriver"/>
+        </methods>
+      </class> <!-- phptravels.testProces.tests.TS002_HomePage_VerifyFuncionalityOfMyAccountDropdownMenu -->
+      <class name="phptravels.testProces.tests.TS010_InvalidLoginAttempts_VerifyErrorMsg">
+        <methods>
+          <include name="setupDriver"/>
+          <include name="setupData"/>
+          <include name="TC01_loginWithAllEmptyFields"/>
+          <include name="setErrorMsg"/>
+          <include name="quitDriver"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- phptravels.testProces.tests.TS010_InvalidLoginAttempts_VerifyErrorMsg -->
+      <class name="phptravels.testProces.tests.TS001_OpenAndVerifyHomePage">
+        <methods>
+          <include name="TC01_OpenAndVerifyHomePage"/>
+          <include name="setupDriver"/>
+          <include name="setupData"/>
+          <include name="quitDriver"/>
+        </methods>
+      </class> <!-- phptravels.testProces.tests.TS001_OpenAndVerifyHomePage -->
+      <class name="phptravels.testProces.tests.TS008_LoginValidUser_VerifyAccountPage_AndLogout">
+        <methods>
+          <include name="TC02_logoutToLoginPage"/>
+          <include name="setupDriver"/>
+          <include name="TC01_testLoginWithValidCredentials"/>
+          <include name="setupData"/>
+          <include name="quitDriver"/>
+        </methods>
+      </class> <!-- phptravels.testProces.tests.TS008_LoginValidUser_VerifyAccountPage_AndLogout -->
+      <class name="phptravels.testProces.tests.TS006_IncompleteRegistartion_VerifyErrorMsgs">
+        <methods>
+          <include name="TC05_registerWithEmptyConfirmPasswordField_showErrorMsg"/>
+          <include name="beforeMethod"/>
+          <include name="TC01_registerWithEmptyFirstnameField_showErrorMsg"/>
+          <include name="TC04_registerWithEmptyPasswordField_showErrorMsg"/>
+          <include name="TC10_registerWithTooShortPassword_lessThanSixChar"/>
+          <include name="TC09_registerWithToLongEmail_localPartIsGreaterThan64Char"/>
+          <include name="TC07_registerWithWrongConfirmpaswordField_showErrorMsg"/>
+          <include name="setUpErrorMessages"/>
+          <include name="TC06_registerWithAllEmptyField_showErrorMsg"/>
+          <include name="setupDriver"/>
+          <include name="TC03_registerWithEmptyEmailField_showErrorMsg"/>
+          <include name="TC08_registerWithWrongFormOfEmail"/>
+          <include name="setupData"/>
+          <include name="TC02_registerWithEmptyLastnameField_showErrorMsg"/>
+          <include name="quitDriver"/>
+        </methods>
+      </class> <!-- phptravels.testProces.tests.TS006_IncompleteRegistartion_VerifyErrorMsgs -->
+    </classes>
+  </test> <!-- Mozzila(failed) -->
+</suite> <!-- Failed suite [Probni Test] -->

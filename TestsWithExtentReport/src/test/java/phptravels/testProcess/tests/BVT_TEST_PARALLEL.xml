@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="BVT Test Parallel"  parallel="tests"  thread-count="2"  verbose="1" >
+
+	<parameter name="environment" value="qa" />
+	
+	<listeners>
+		<listener class-name="phptravels.listener.TestListener"/>
+	</listeners>
+	
+	<test name="BVT-Chrome">
+
+		<parameter name="browser" value="chrome" />
+
+		<classes>
+			<class name="phptravels.testProcess.tests.TS001_OpenAndVerifyHomePage" />
+			<class name="phptravels.testProcess.tests.TS002_HomePage_VerifyFuncionalityOfMyAccountDropdownMenu" />
+			<class name="phptravels.testProcess.tests.TS003_OpenAndVerifyRegisterPage_UsingLink" />
+			<class name="phptravels.testProcess.tests.TS004_RegisterNewValidUser" />
+			<class name="phptravels.testProcess.tests.TS005_RegisterNewUserWithExistingEmail_VerifyErrorMsg" />
+			<class name="phptravels.testProcess.tests.TS007_OpenAndVerifyLoginPage_UsingLink" />
+			<class name="phptravels.testProcess.tests.TS008_LoginValidUser_VerifyAccountPage_AndLogout" />
+			<class name="phptravels.testProcess.tests.TS009_LoginValidUserWithInvalidPassword_VerifyErrorMsg" />
+		</classes>
+	</test>
+	
+	<test name="BVT-Firefox">
+
+		<parameter name="browser" value="firefox" />
+
+		<classes>
+			<class name="phptravels.testProcess.tests.TS002_HomePage_VerifyFuncionalityOfMyAccountDropdownMenu" />
+			<class name="phptravels.testProcess.tests.TS004_RegisterNewValidUser" />
+			<class name="phptravels.testProcess.tests.TS005_RegisterNewUserWithExistingEmail_VerifyErrorMsg" />
+			<class name="phptravels.testProcess.tests.TS008_LoginValidUser_VerifyAccountPage_AndLogout" />
+			<class name="phptravels.testProcess.tests.TS009_LoginValidUserWithInvalidPassword_VerifyErrorMsg" />
+		</classes>
+	</test>
+</suite>
